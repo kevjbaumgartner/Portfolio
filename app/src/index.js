@@ -8,6 +8,7 @@ import App from './App';
 
 // CSS import
 import './index.css'
+import './fonts/fontawesome-free-6.0.0-web/css/all.min.css' // Font Awesome 6
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -15,5 +16,5 @@ ReactDOM.render(
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>,
-	document.getElementById('app')
+	document.getElementById('root')
 );

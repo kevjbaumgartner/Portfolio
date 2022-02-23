@@ -1,0 +1,69 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+/* Document */
+html, body, #root {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fefefe;
+}
+
+/* App */
+#App {
+	display: flex;
+	padding: 1%;
+	width: auto;
+	height: fit-content;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	background-color: #fefefe;
+}
+
+/* Navbar */
+#Navbar {
+	width: 100%;
+	background-color: #fefefe;
+}
+
+/* AppContent */
+.AppContent {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #fefefe;
+}
+
+/* Landing */
+#Landing {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#Landing #logo {
+	width: 60%;
+	border-radius: 50%;
+}
+
+#Landing #menu {}
+
+#Landing #menu #title {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#Landing #menu #text {
+	padding: 0;
+	margin: 0;
+}
+
+#Landing #menu #links-local, #links-social {
+	padding: 0;
+	margin: 0;
+}
