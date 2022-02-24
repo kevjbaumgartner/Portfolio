@@ -21,19 +21,51 @@ html, body, #root {
 /* App */
 #App {
 	display: flex;
-	padding: 1%;
+	padding: 0 2.5vw;
 	width: 100%;
-	height: fit-content;
+	height: 100%;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: flex-start;
+	align-items: center;
 	background-color: #fefefe;
+	justify-content: center;
 }
 
 /* Navbar */
 #Navbar {
-	width: 100%;
-	background-color: #fefefe;
+	background-color: transparent;
+	top: 0;
+	position: absolute;
+	margin-top: calc(1rem + 1vmin);
+}
+
+#Navbar #links-local {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+}
+
+#Navbar #links-local a {
+	color: #000000;
+	font-size: calc(0.8rem + 0.8vmin);
+	letter-spacing: calc(0.1rem + 0.15vmin);
+	line-height: 100%;
+	text-decoration: none;
+	transition: 0.2s color, 0.2s opacity ease-in-out;
+	opacity: 0.5;
+}
+
+#Navbar #links-local a:not(:last-child) {
+	margin-right: calc(1rem + 1vmin);
+}
+
+#Navbar #links-local a:hover {
+	color: #990000;
+	opacity: 1;
 }
 
 /* AppContent */
@@ -46,6 +78,7 @@ html, body, #root {
 
 /* Landing */
 #Landing {
+	height: fit-content;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -55,18 +88,30 @@ html, body, #root {
 }
 
 #Landing #logo {
-	width: calc(5rem + 20vmin);
-	border-radius: 50%;
+	width: auto;
+	height: 50vh;
+	display: flex;
 	pointer-events: none;
+	justify-content: center;
+	max-height: 500px;
+	max-width: 500px
+}
+
+#Landing #logo img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
 }
 
 #Landing #menu {
-	margin: calc(1rem + 1vmin);
-}
-
-#Landing #menu .text #title {
-	font-weight: bold;
-	color: #990000;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+	justify-content: space-between;
+	margin-left: calc(1rem + 1vmin);
+	max-height: 500px;
+	max-width: 500px
 }
 
 #Landing #menu .text {
@@ -76,57 +121,145 @@ html, body, #root {
 	margin: 0;
 }
 
-#Landing #menu #text-1 {
-	margin-bottom: calc(1rem + 1vmin);
-}
-
-#Landing #menu #links-local, #links-social {
-	text-align: center;
+#Landing #menu .text-small {
+	font-size: calc(1rem + 1vmin);
+	line-height: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-#Landing #menu #links-local a, #links-social a {
-	color: #000000;
-	font-size: calc(0.8rem + 0.8vmin);
-	letter-spacing: calc(0.1rem + 0.15vmin);
-	line-height: 100%;
-	text-decoration: none;
-	transition: 0.2s color ease-in-out;
-}
-
-#Landing #menu #links-local a:hover, #links-social a:hover {
+#Landing #menu .focus {
+	font-weight: bold;
 	color: #990000;
 }
 
-#Landing #menu #links-local {
-	margin: calc(1rem + 1vmin) 0px calc(1rem + 1vmin) 0px;
-	display: flex;
-	font-weight: bold;
-	text-transform: uppercase;
+#Landing #menu .focus-link {
+	text-decoration: underline;
+	color: #000000;
+	transition: 0.2s color ease-in-out;
 }
 
-#Landing #menu #links-local a {
-	margin-right: calc(1rem + 1vmin);
-}
-
-@media (max-width: 575.98px) {
-	#Landing #menu #links-local {
-		justify-content: space-around;
-	}
-
-	#Landing #menu #links-local a {
-		margin: 0;
-	}
+#Landing #menu .focus-link:hover {
+	color: #990000;
 }
 
 #Landing #menu #links-social {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 	display: flex;
-	justify-content: center;
+}
+
+#Landing #menu #links-social a {
+	color: #000000;
+	text-decoration: none;
+	transition: 0.2s color, 0.2s opacity ease-in-out;
+	opacity: 0.5;
+}
+
+#Landing #menu #links-social a:not(:last-child) {
+	margin-right: calc(1rem + 1vmin);
+}
+
+#Landing #menu #links-social a:hover {
+	color: #990000;
+	opacity: 1;
 }
 
 #Landing #menu #links-social i {
 	font-size: calc(2rem + 0.5vmin);
 	line-height: 100%;
-	margin: 0px 10px;
+}
+
+/* Half-or-less sized screens */
+@media (max-width: 1200px) and (min-height: 575.98px) {
+	#Landing {
+		height: fit-content;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: 40vh;
+		width: 60%;
+		pointer-events: none;
+	}
+
+	#Landing #menu {
+		margin-top: calc(1rem + 1vmin);
+		margin-left: 0;
+		width: 80%;
+	}
+
+	#Landing #menu #links-social {
+		margin-top: calc(1rem + 1vmin);
+		justify-content: space-around;
+	}
+
+	#Landing #menu #links-social a {
+		margin: 0;
+	}
+}
+
+/* Mobile - Portrait */
+@media (max-width: 575.98px) and (orientation: portrait) {
+	#Landing {
+		height: 80vh;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: auto;
+		width: 60%;
+		pointer-events: none;
+	}
+
+	#Landing #menu {
+		margin-top: calc(1rem + 1vmin);
+		margin-left: 0;
+		width: 80%;
+	}
+
+	#Landing #menu #links-social {
+		margin-top: calc(1rem + 1vmin);
+		justify-content: space-around;
+	}
+
+	#Landing #menu #links-social a {
+		margin: 0;
+	}
+}
+
+/* Mobile - Landscape */
+@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
+	#Landing {
+		height: fit-content;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: 40vh;
+
+		pointer-events: none;
+	}
+
+	#Landing #logo img {
+		width: auto;
+	}
+
+	#Landing #menu .text {
+		font-size: calc(1.2rem + 1.2vmin);
+		max-width: 300px;
+	}
+
+	#Landing #menu #links-social {
+		margin-top: calc(1rem + 1vmin);
+		justify-content: space-around;
+	}
+
+	#Landing #menu #links-social a {
+		margin: 0;
+	}
 }
