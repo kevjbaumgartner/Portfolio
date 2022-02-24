@@ -1,6 +1,6 @@
 // Library imports
-import React, { useState } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 
 // Component imports
@@ -13,17 +13,14 @@ import NotFound from './components/NotFound';
 
 // App
 const App = () => {
-	const [P, setP] = useState(useLocation());
-
 	return (
 		<div id='App'>
-			<Navbar />
 			<Routes>
-				<Route exact path='/' element={<Landing />} />		{/* Default home screen */}
-				<Route path='/about' element={<About />} />			{/* About me */}
-				<Route path='/projects' element={<Projects />} />	{/* My projects */}
-				<Route path='/resume' element={<Resume />} />		{/* Work/School history */}
-				<Route path='*' element={<NotFound />} />			{/* Route 404 */}
+				<Route exact path='/' element={<Landing />} />						{/* Default - Home screen */}
+				<Route path='/about' element={<><Navbar /><About /></>} />			{/* About me */}
+				<Route path='/projects' element={<><Navbar /><Projects /></>} />	{/* My projects */}
+				<Route path='/resume' element={<><Navbar /><Resume /></>} />		{/* My experience */}
+				<Route path='*' element={<><Navbar /><NotFound /></>} />			{/* Route fall through */}
 			</Routes>
 		</div>
 	);
