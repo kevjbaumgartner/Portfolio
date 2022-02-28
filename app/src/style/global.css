@@ -1,0 +1,39 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300');
+
+/* Document */
+html, body, #root {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #fefefe;
+}
+
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* App */
+#App {
+	display: flex;
+	padding: 0 2.5vw;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: #fefefe;
+	justify-content: center;
+}
+
+/* AppContent */
+.AppContent {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #fefefe;
+}

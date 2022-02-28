@@ -7,8 +7,12 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 // CSS import
-import './index.css'
-import './fonts/fontawesome-free-6.0.0-web/css/all.min.css' // Font Awesome 6
+import './style/global.css';
+import './style/navbar.css'
+import './style/landing.css';
+
+// Font Awesome 6 import
+import './fonts/fontawesome-free-6.0.0-web/css/all.min.css';
 
 ReactDOM.render(
 	<React.StrictMode>
