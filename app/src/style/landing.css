@@ -95,7 +95,7 @@
 
 
 /* Half-or-less sized screens */
-@media (max-width: 1200px) and (min-width: 800px) and (min-height: 576px) {
+@media (max-width: 1200px) and (min-width: 576px) and (min-height: 576px) {
 	#Landing {
 		height: fit-content;
 		flex-direction: column;
@@ -161,8 +161,8 @@
 	}
 
 	#Landing #logo {
-		height: 40vh;
-
+		height: 50vh;
+		width: auto;
 		pointer-events: none;
 	}
 
@@ -172,15 +172,14 @@
 
 	#Landing #menu .text {
 		font-size: calc(1.2rem + 1.2vmin);
-		max-width: 300px;
+		max-width: 40vw;
 	}
 
 	#Landing #menu #links-social {
-		margin-top: calc(1rem + 1vmin);
 		justify-content: space-around;
 	}
 
 	#Landing #menu #links-social a {
-		margin: 0;
+		margin-right: 0 !important;
 	}
 }
