@@ -4,6 +4,7 @@
 	top: 0;
 	position: absolute;
 	margin-top: calc(1rem + 1vmin);
+	user-select: none;
 }
 
 #Navbar #links-local {
@@ -31,7 +32,7 @@
 }
 
 #Navbar #links-local a:hover {
-	color: #990000;
+	color: #aa0000;
 	opacity: 1;
 }
 

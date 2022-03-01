@@ -11,7 +11,7 @@
 
 #Landing #logo {
 	width: auto;
-	height: 50vh;
+	height: 40vh;
 	display: flex;
 	pointer-events: none;
 	justify-content: center;
@@ -30,7 +30,7 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	height: 100%;
-	justify-content: space-between;
+	justify-content: center;
 	margin-left: calc(1rem + 1vmin);
 	max-height: 500px;
 	max-width: 500px
@@ -52,7 +52,7 @@
 
 #Landing #menu .focus {
 	font-weight: bold;
-	color: #990000;
+	color: #aa0000;
 }
 
 #Landing #menu .focus-link {
@@ -62,7 +62,7 @@
 }
 
 #Landing #menu .focus-link:hover {
-	color: #990000;
+	color: #aa0000;
 }
 
 #Landing #menu #links-social {
@@ -84,7 +84,7 @@
 }
 
 #Landing #menu #links-social a:hover {
-	color: #990000;
+	color: #aa0000;
 	opacity: 1;
 }
 
@@ -95,7 +95,7 @@
 
 
 /* Half-or-less sized screens */
-@media (max-width: 1200px) and (min-height: 575.98px) {
+@media (max-width: 1200px) and (min-width: 800px) and (min-height: 576px) {
 	#Landing {
 		height: fit-content;
 		flex-direction: column;
@@ -115,19 +115,18 @@
 	}
 
 	#Landing #menu #links-social {
-		margin-top: calc(1rem + 1vmin);
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	#Landing #menu #links-social a {
-		margin: 0;
+		margin-right: 0 !important;
 	}
 }
 
 /* Mobile - Portrait */
 @media (max-width: 575.98px) and (orientation: portrait) {
 	#Landing {
-		height: 80vh;
+		height: fit-content;
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
@@ -145,12 +144,11 @@
 	}
 
 	#Landing #menu #links-social {
-		margin-top: calc(1rem + 1vmin);
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	#Landing #menu #links-social a {
-		margin: 0;
+		margin-right: 0 !important;
 	}
 }
 
