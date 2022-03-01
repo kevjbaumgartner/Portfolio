@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Resume() {
 	return (
-		<div id='Resume' className='AppContent'>
+		<div id='Resume'>
 			Resume
 		</div>
 	);

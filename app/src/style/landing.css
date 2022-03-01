@@ -50,11 +50,6 @@
 	margin: 0;
 }
 
-#Landing #menu .focus {
-	font-weight: bold;
-	color: #aa0000;
-}
-
 #Landing #menu .focus-link {
 	text-decoration: underline;
 	color: #000000;

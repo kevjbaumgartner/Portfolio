@@ -11,6 +11,9 @@ import './style/global.css';
 import './style/navbar.css'
 import './style/landing.css';
 
+// Animations import
+import './style/animations.css';
+
 // Font Awesome 6 import
 import './fonts/fontawesome-free-6.0.0-web/css/all.min.css';
 

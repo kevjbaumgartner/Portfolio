@@ -17,6 +17,12 @@ html, body, #root {
 	align-items: center;
 }
 
+/* Global styles */
+.focus {
+	font-weight: bold;
+	color: #aa0000 !important;
+}
+
 /* App */
 #App {
 	display: flex;
@@ -31,7 +37,7 @@ html, body, #root {
 }
 
 /* AppContent */
-.AppContent {
+#AppContent {
 	padding: 0;
 	margin: 0;
 	width: 100%;
