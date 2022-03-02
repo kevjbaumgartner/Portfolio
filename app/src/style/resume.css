@@ -1,0 +1,42 @@
+/* Resume */
+#Resume {
+	height: fit-content;
+	width: 70vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	user-select: none;
+}
+
+#Resume .exp-block {
+	font-size: calc(1rem + 0.5vmin);
+	border: 1px solid red;
+	border-radius: 10px;
+	padding: calc(1rem + 1vmin);
+}
+
+#Resume .exp-block:not(:last-child) {
+	margin-bottom: calc(1rem + 1vmin);
+}
+
+#Resume .exp-item {}
+
+#Resume .exp-item:not(:last-child) {
+	margin-bottom: calc(1rem + 1vmin);
+}
+
+#Resume .exp-item .exp-item-title {}
+
+#Resume .exp-item .exp-item-employer {}
+
+#Resume .exp-item .exp-item-school {}
+
+#Resume .exp-item .exp-item-date {}
+
+#Resume .exp-item .exp-item-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}

@@ -13,21 +13,23 @@ html, body, #root {
 
 #root {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 /* Global styles */
 .focus {
-	font-weight: bold;
+	font-weight: bold !important;
 	color: #aa0000 !important;
+	opacity: 1 !important;
 }
 
 /* App */
 #App {
 	display: flex;
 	padding: 0 2.5vw;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	flex-direction: column;
 	flex-wrap: nowrap;

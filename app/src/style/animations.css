@@ -1,4 +1,6 @@
 /* Route css transitions */
+
+/* Fade */
 .fade-enter {
 	opacity: 0;
 }

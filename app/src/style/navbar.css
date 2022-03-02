@@ -1,9 +1,10 @@
 /* Navbar */
 #Navbar {
-	background-color: transparent;
+	background-color: red;
 	top: 0;
-	position: absolute;
-	margin-top: calc(1rem + 1vmin);
+	position: relative;
+	width: 100%;
+	margin: calc(1rem + 1vmin) 0;
 	user-select: none;
 }
 

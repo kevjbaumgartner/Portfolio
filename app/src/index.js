@@ -5,13 +5,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 // App import
 import App from './App';
+import Navbar from './components/Navbar'
 
 // CSS import
 import './style/global.css';
 import './style/navbar.css'
 import './style/landing.css';
+import './style/resume.css'
 
-// Animations import
+// CSS animations import
 import './style/animations.css';
 
 // Font Awesome 6 import
@@ -20,6 +22,7 @@ import './fonts/fontawesome-free-6.0.0-web/css/all.min.css';
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
+			<Navbar />
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>,
