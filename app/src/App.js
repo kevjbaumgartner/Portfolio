@@ -16,6 +16,7 @@ const App = () => {
 	let location = useLocation();
 	return (
 		<div id='App'>
+			<Navbar />
 			<SwitchTransition id='AppContent'>
 				<CSSTransition key={location.pathname} classNames="fade" timeout={200}>
 					<Routes location={location}>

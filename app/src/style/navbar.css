@@ -1,21 +1,21 @@
 /* Navbar */
 #Navbar {
-	background-color: red;
-	top: 0;
-	position: relative;
+	position: sticky;
+	top: 0px;
 	width: 100%;
-	margin: calc(1rem + 1vmin) 0;
+	height: 10%;
 	user-select: none;
+	background-color: #fefefe;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #Navbar #links-local {
-	text-align: center;
 	padding: 0;
 	margin: 0;
 	font-weight: bold;
 	text-transform: uppercase;
-	display: flex;
-	justify-content: center;
 }
 
 #Navbar #links-local a {
@@ -35,34 +35,4 @@
 #Navbar #links-local a:hover {
 	color: #aa0000;
 	opacity: 1;
-}
-
-/* Half-or-less sized screens */
-@media (max-width: 1200px) and (min-height: 575.98px) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
-}
-
-/* Mobile - Portrait */
-@media (max-width: 575.98px) and (orientation: portrait) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
-}
-
-/* Mobile - Landscape */
-@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
 }

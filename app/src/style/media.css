@@ -1,0 +1,121 @@
+/* Navbar */
+/* Half-or-less sized screens */
+@media (max-width: 1200px) and (min-height: 575.98px) {
+	#Navbar {
+		top: unset;
+		position: unset;
+		margin: 0;
+		margin-bottom: calc(1rem + 1vmin);
+	}
+}
+
+/* Mobile - Portrait */
+@media (max-width: 575.98px) and (orientation: portrait) {
+	#Navbar {
+		top: unset;
+		position: unset;
+		margin: 0;
+		margin-bottom: calc(1rem + 1vmin);
+	}
+}
+
+/* Mobile - Landscape */
+@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
+	#Navbar {
+		top: unset;
+		position: unset;
+		margin: 0;
+		margin-bottom: calc(1rem + 1vmin);
+	}
+}
+
+/* Landing */
+/* Half-or-less sized screens */
+@media (max-width: 1200px) and (min-width: 576px) and (min-height: 576px) {
+	#Landing {
+		height: fit-content;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: 40vh;
+		width: 60%;
+		pointer-events: none;
+	}
+
+	#Landing #menu {
+		margin-top: calc(1rem + 1vmin);
+		margin-left: 0;
+		width: 80%;
+	}
+
+	#Landing #menu #links-social {
+		justify-content: space-evenly;
+	}
+
+	#Landing #menu #links-social a {
+		margin-right: 0 !important;
+	}
+}
+
+/* Mobile - Portrait */
+@media (max-width: 575.98px) and (orientation: portrait) {
+	#Landing {
+		height: fit-content;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: auto;
+		width: 60%;
+		pointer-events: none;
+	}
+
+	#Landing #menu {
+		margin-top: calc(1rem + 1vmin);
+		margin-left: 0;
+		width: 80%;
+	}
+
+	#Landing #menu #links-social {
+		justify-content: space-evenly;
+	}
+
+	#Landing #menu #links-social a {
+		margin-right: 0 !important;
+	}
+}
+
+/* Mobile - Landscape */
+@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
+	#Landing {
+		height: fit-content;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	#Landing #logo {
+		height: 50vh;
+		width: auto;
+		pointer-events: none;
+	}
+
+	#Landing #logo img {
+		width: auto;
+	}
+
+	#Landing #menu .text {
+		font-size: calc(1.2rem + 1.2vmin);
+		max-width: 40vw;
+	}
+
+	#Landing #menu #links-social {
+		justify-content: space-around;
+	}
+
+	#Landing #menu #links-social a {
+		margin-right: 0 !important;
+	}
+}

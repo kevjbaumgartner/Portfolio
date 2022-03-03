@@ -15,6 +15,24 @@ export default function Resume() {
 					</ul>
 				</div>
 				<div className='exp-item'>
+					<span className='exp-item-title'>IT Technician</span>
+					<span className='exp-item-employer'>Kinectrics</span>
+					<span className='exp-item-date'>Sept. 2021 – Dec. 2021</span>
+					<ul className='exp-item-list'>
+						<li>Engaged in a hybrid work environment, providing effective technical support for all corporate branches.</li>
+						<li>Actively used ticketing systems and remote access software to reduce end-user incident resolution time.</li>
+					</ul>
+				</div>
+				<div className='exp-item'>
+					<span className='exp-item-title'>IT Technician</span>
+					<span className='exp-item-employer'>Kinectrics</span>
+					<span className='exp-item-date'>Sept. 2021 – Dec. 2021</span>
+					<ul className='exp-item-list'>
+						<li>Engaged in a hybrid work environment, providing effective technical support for all corporate branches.</li>
+						<li>Actively used ticketing systems and remote access software to reduce end-user incident resolution time.</li>
+					</ul>
+				</div>
+				<div className='exp-item'>
 					<span className='exp-item-title'>IT Field Services Technician</span>
 					<span className='exp-item-employer'>Ontario Ministry of Government and Consumer Services</span>
 					<span className='exp-item-date'>Aug. 2020 – Dec. 2020</span>
