@@ -8,7 +8,7 @@ export default function Resume() {
 	return (
 		<div id='Resume'>
 			<div id='exp-download'>
-				<a href={resume} target='_blank'><i className="fa-solid fa-file-pdf"></i> Download a copy of my resume here!</a>
+				<a href={resume} target='_blank' rel='noreferrer'><i className="fa-solid fa-file-pdf"></i> Download a copy of my resume here!</a>
 			</div>
 			<span className='exp-header'>Experience</span>
 			<div className='exp-block'>

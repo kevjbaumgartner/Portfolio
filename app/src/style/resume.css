@@ -1,12 +1,13 @@
 /* Resume */
 #Resume {
-	height: 90%;
+	height: 85%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
 	user-select: none;
 	overflow: auto;
+	margin-bottom: 5%;
 }
 
 #Resume #exp-download {
@@ -20,7 +21,7 @@
 	transition: 0.2s background-color ease-in-out;
 	pointer-events: none;
 	margin-bottom: calc(1rem + 1vmin);
-	background-color: #eee;
+	background-color: #f5f5f5;
 }
 
 #Resume #exp-download a {
@@ -64,6 +65,7 @@
 
 #Resume .exp-block hr {
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	margin: calc(0.5rem + 0.5vmin) 0;
 
 	/* HTML5 <hr /> rendering issue fix */
 	margin-left: 0;
@@ -84,37 +86,35 @@
 	width: 60%;
 	font-weight: bold;
 	font-size: calc(0.8rem + 0.8vmin);
-	line-height: 100%;
 }
 
 #Resume .exp-item .exp-item-date {
 	width: 40%;
 	text-align: right;
-	opacity: 0.5;
 	text-transform: uppercase;
-	font-size: calc(0.8rem + 0.8vmin);
+	font-size: calc(0.7rem + 0.7vmin);
 	line-height: 100%;
 }
 
 #Resume .exp-item .exp-item-employer {
 	width: 100%;
 	margin-bottom: calc(0.25rem + 0.25vmin);
-	opacity: 0.5;
-	font-size: calc(0.7rem + 0.7vmin);
-	line-height: 100%;
+	font-size: calc(0.8rem + 0.8vmin);
 }
 
 #Resume .exp-item .exp-item-school {
 	width: 100%;
-	opacity: 0.5;
-	font-size: calc(0.7rem + 0.7vmin);
-	line-height: 100%;
+	font-size: calc(0.8rem + 0.8vmin);
 }
 
 #Resume .exp-item .exp-item-list {
 	padding: 0;
 	margin: 0;
-	list-style-type: none;
+	list-style-position: inside;
 	font-size: calc(0.7rem + 0.7vmin);
-	line-height: 100%;
+}
+
+#Resume .exp-item .exp-item-list li::marker {
+	font-size: calc(0.5rem + 0.5vmin);
+	margin: 0;
 }

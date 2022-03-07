@@ -1,6 +1,6 @@
 /* Landing */
 #Landing {
-	height: 90%;
+	height: 85%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -8,6 +8,7 @@
 	justify-content: center;
 	user-select: none;
 	overflow: auto;
+	margin-bottom: 5%;
 }
 
 #Landing #logo {
