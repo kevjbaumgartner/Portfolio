@@ -4,7 +4,40 @@ import React from 'react';
 export default function About() {
 	return (
 		<div id='About'>
-			About
+			<div id='written'>
+				<span id='intro'>Nice to meet you!</span>
+				<p>
+					I'm Kevin, a diligent programmer with an aptitude for creative coding from Milton, Ontario. I've been making web and software programs since I first began coding on Notepad in 2011.
+					<br />
+					From individual web pages to full scale implementations, I focus on creating captivating, accessible, and interactive applications.
+					<br /><br />
+					As a developer, I'm driven by a passion to understand and come up with solutions to challenges new and old, easy or difficult.
+					<br />
+					I work well in teams, but also appreciate the space to work out my own answers.
+					<br />
+					As a person, I'm quick to obsess over new hobbies,
+				</p>
+			</div>
+			<div id='jots'>
+				<span className='jot-title'>Tech Stack</span>
+				<div id='skills'>
+					<ul className='jot-list'>
+						<li><i class="fa-brands fa-html5"></i> HTML5, <i class="fa-brands fa-css3-alt"></i> CSS3, and <i class="fa-brands fa-js"></i> JavaScript</li>
+						<li><i class="fa-brands fa-react"></i> React.js</li>
+						<li><i class="fa-solid fa-database"></i> MongoDB, and MySQL</li>
+						<li><i class="fa-brands fa-node-js"></i> Node.js using Express.js</li>
+					</ul>
+				</div>
+				<span className='jot-title'>Hobbies</span>
+				<div id='hobbies'>
+					<ul className='jot-list'>
+						<li><i class="fa-solid fa-keyboard"></i> Mechanical Keyboards</li>
+						<li><i class="fa-solid fa-dice"></i> Tabletop Games</li>
+						<li><i class="fa-solid fa-gamepad"></i> Video Games</li>
+						<li><i class="fa-solid fa-clapperboard"></i> Horror Movies</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	);
 };

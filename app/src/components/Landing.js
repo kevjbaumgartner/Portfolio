@@ -13,7 +13,7 @@ export default function Landing() {
 					<br />
 					a full stack developer.
 					<br /><br />
-					I specialize in web development, using the <a href='https://www.mongodb.com/mern-stack' target='_blank' rel='noreferrer' className='focus-link'>MERN solution stack</a> to create beautiful solutions for everyday situations.
+					I specialize in web development, using the <a href='https://www.mongodb.com/mern-stack' target='_blank' rel='noreferrer' className='focus-link'>MERN solution stack</a> to create beautiful solutions for everyday ideas.
 					<br /><br />
 					<div id='links-social'>
 						<a href='https://github.com/kevjbaumgartner/' target='_blank' rel='noreferrer'><i className='fa-brands fa-github-square'></i></a>
