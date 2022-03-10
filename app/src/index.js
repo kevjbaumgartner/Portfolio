@@ -10,8 +10,9 @@ import App from './App';
 import './style/global.css';
 import './style/navbar.css'
 import './style/landing.css';
-import './style/resume.css';
 import './style/about.css';
+import './style/projects.css';
+import './style/resume.css';
 import './style/footer.css';
 
 // CSS media queries

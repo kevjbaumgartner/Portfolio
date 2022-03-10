@@ -9,7 +9,7 @@
 	justify-content: center;
 	max-height: 400px;
 	max-width: 400px;
-	margin: calc(2rem + 2vmin);
+	margin: calc(2rem + 2vmin) 0;
 }
 
 #About #logo img {

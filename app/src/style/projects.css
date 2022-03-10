@@ -1,0 +1,55 @@
+/* Projects */
+#Projects {}
+
+#Projects #tiles {
+	width: 70%;
+	max-width: 1000px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#Projects #tiles .tile {
+	width: 43.75%;
+	border-radius: 10px;
+	margin: 0;
+	padding: 2.5%;
+	background-color: blue;
+}
+
+#Projects #tiles .tile:nth-child(odd) {
+	margin-right: 2.5%;
+}
+
+#Projects #tiles .tile:not(:last-child) {
+	margin-bottom: 2.5%;
+}
+
+#Projects #tiles .tile-img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#Projects #tiles .tile-title {
+	margin: 0;
+	padding: 0;
+}
+
+#Projects #tiles .tile-text {
+	margin: 0;
+	padding: 0;
+}
+
+#Projects #tiles .tile-stack {
+	margin: 0;
+	padding: 0;
+}
+
+#Projects #tiles .tile-link {
+	margin: 0;
+	padding: 0;
+}
