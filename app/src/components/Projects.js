@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Projects() {
 	return (
-		<div id='Projects'>
+		<div id='Projects' className='AppContent-Regular'>
 			Projects
 		</div>
 	);

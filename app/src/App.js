@@ -9,6 +9,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 
 // App
@@ -28,6 +29,7 @@ const App = () => {
 					</Routes>
 				</CSSTransition>
 			</SwitchTransition>
+			<Footer />
 		</div>
 	);
 };

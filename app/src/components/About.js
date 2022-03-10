@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function About() {
 	return (
-		<div id='About'>
+		<div id='About' className='AppContent-Regular'>
 			<div id='logo'>
 				<img src='https://media-exp1.licdn.com/dms/image/C4D03AQH8VzQ649Vvyg/profile-displayphoto-shrink_800_800/0/1545340413878?e=1651104000&v=beta&t=_8KRLDVm7oqysz90sZoDaK1qC8RJYWanBCnffp-JagE' alt='logo'></img>
 			</div>
@@ -20,11 +20,6 @@ export default function About() {
 					If you think we'd get along, feel free to send a message my way, I'm always happy to meet new people!
 				</p>
 			</div>
-			<div id='links-social'>
-				<a href='https://github.com/kevjbaumgartner/' target='_blank' rel='noreferrer'><i className='fa-brands fa-github-square'></i></a>
-				<a href='https://www.linkedin.com/in/kevjbaumgartner/' target='_blank' rel='noreferrer'><i className='fa-brands fa-linkedin'></i></a>
-				<a href='mailto:kevjbaumwork@gmail.com'><i className='fa-solid fa-square-envelope'></i></a>
-			</div>
 			<div id='jots'>
 				<div id='skills'>
 					<span className='jot-title'>Tech Stack</span>
@@ -32,16 +27,16 @@ export default function About() {
 						<li>HTML5, CSS3, and JavaScript</li>
 						<li>React.js</li>
 						<li>MongoDB, and MySQL</li>
-						<li>Node.js using Express.js</li>
+						<li>Node.js, and Express.js</li>
 					</ul>
 				</div>
 				<div id='hobbies'>
 					<span className='jot-title'>Hobbies</span>
 					<ul className='jot-list'>
-						<li>Mechanical Keyboards</li>
-						<li>Tabletop Games</li>
-						<li>Video Games</li>
-						<li>Horror Movies</li>
+						<li>Mechanical keyboards</li>
+						<li>Tabletop games</li>
+						<li>Video games</li>
+						<li>Horror movies</li>
 					</ul>
 				</div>
 			</div>

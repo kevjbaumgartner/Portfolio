@@ -12,6 +12,7 @@ import './style/navbar.css'
 import './style/landing.css';
 import './style/resume.css';
 import './style/about.css';
+import './style/footer.css';
 
 // CSS media queries
 // import './style/media.css';

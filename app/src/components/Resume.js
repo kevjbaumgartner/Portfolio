@@ -6,7 +6,7 @@ import resume from '../assets/kevinbaumgartner_resume.pdf';
 
 export default function Resume() {
 	return (
-		<div id='Resume'>
+		<div id='Resume' className='AppContent-Regular'>
 			<div id='exp-download'>
 				<a href={resume} target='_blank' rel='noreferrer'><i className="fa-solid fa-file-pdf"></i> Download a copy of my resume here!</a>
 			</div>
@@ -28,7 +28,7 @@ export default function Resume() {
 					<span className='exp-item-employer'>Ontario Ministry of Government and Consumer Services</span>
 					<ul className='exp-item-list'>
 						<li>Worked remotely to support all Ontario Government ministries, carrying out large scale incident documentation and resolution.</li>
-						<li> Quickly adapted to proprietary solutions while applying extensive knowledge of industry level applications to manage configuration item maintenance, software distribution, and rollouts.</li>
+						<li>Quickly adapted to proprietary solutions while applying extensive knowledge of industry level applications to manage configuration item maintenance, software distribution, and rollouts.</li>
 					</ul>
 				</div>
 				<hr />
@@ -47,16 +47,15 @@ export default function Resume() {
 					<span className='exp-item-date'>Jan. 2017 – May 2017</span>
 					<span className='exp-item-employer'>Appleby College</span>
 					<ul className='exp-item-list'>
-						<li>Delivered helpful and professional on-site technical support for students and staff of all levels.</li>
+						<li>Delivered professional technical support, asset deployment, and training for students and staff of all levels.</li>
 						<li>Handled equipment maintenance, setup, and organization by using ticketing solutions.</li>
-						<li>Carried out one-on-one deployment and employee training.</li>
 					</ul>
 				</div>
 			</div>
 			<span className='exp-header'>Education</span>
 			<div className='exp-block'>
 				<div className='exp-item'>
-					<span className='exp-item-title'>Honours Bachelor of Applied Information Sciences (Information Systems Security - ISS)</span>
+					<span className='exp-item-title'>Information Systems Security (ISS) Honours Bachelor of Applied Information Sciences </span>
 					<span className='exp-item-date'>Class of 2021</span>
 					<span className='exp-item-school'>Sheridan College</span>
 				</div>
