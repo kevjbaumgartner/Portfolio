@@ -5,19 +5,127 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
-	/* user-select: none; */
+	user-select: none;
 	overflow: auto;
 	margin-bottom: 5%;
+}
+
+#About #logo {
+	width: auto;
+	height: 30%;
+	display: flex;
+	pointer-events: none;
+	justify-content: center;
+	max-height: 400px;
+	max-width: 400px
+}
+
+#About #logo img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+}
+
+#About #links-social {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+#About #links-social a {
+	color: #000000;
+	text-decoration: none;
+	transition: 0.2s color, 0.2s opacity ease-in-out;
+	opacity: 0.5;
+}
+
+#About #links-social a:not(:last-child) {
+	margin-right: calc(1rem + 1vmin);
+}
+
+#About #links-social a:hover {
+	color: #aa0000;
+	opacity: 1;
+}
+
+#About #links-social i {
+	font-size: calc(2rem + 0.5vmin);
+	line-height: 100%;
+}
+
+#About .focus-link {
+	text-decoration: underline;
+	color: #000000;
+	transition: 0.2s color ease-in-out;
+}
+
+#About .focus-link:hover {
+	color: #aa0000;
 }
 
 #About #written, #jots {
 	width: 70%;
 	max-width: 1000px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+#About #written p {
+	margin: 0;
+	padding: 0;
 }
 
 #About #jots ul {
-	list-style-type: none;
-	list-style-position: outside;
+	list-style-position: inside;
 	padding: 0;
 	margin: 0;
+}
+
+#About #jots li::marker {
+	font-size: calc(0.5rem + 0.5vmin);
+	margin: 0;
+}
+
+#About #written {
+	font-size: calc(0.7rem + 0.7vmin);
+	flex-direction: column;
+	margin: calc(1rem + 1vmin) 0;
+}
+
+#About #written #intro {
+	width: 70%;
+	max-width: 1000px;
+	font-size: calc(0.8rem + 0.8vmin);
+	line-height: 100%;
+	letter-spacing: calc(0.1rem + 0.15vmin);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #aa0000;
+	margin-bottom: calc(0.5rem + 0.5vmin);
+}
+
+#About #jots {
+	margin-top: calc(1rem + 1vmin);
+	font-size: calc(0.7rem + 0.7vmin);
+	flex-direction: row;
+}
+
+#About #jots .jot-title {
+	width: 70%;
+	max-width: 1000px;
+	font-size: calc(0.8rem + 0.8vmin);
+	line-height: 100%;
+	letter-spacing: calc(0.1rem + 0.15vmin);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #aa0000;
+	margin-bottom: calc(0.5rem + 0.5vmin);
+}
+
+#About #jots #skills, #hobbies {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
 }
