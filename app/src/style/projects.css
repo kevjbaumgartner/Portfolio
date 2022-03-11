@@ -9,6 +9,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: calc(1rem + 1vmin);
 }
 
 #Projects #tiles .tile {
@@ -16,7 +17,12 @@
 	border-radius: 10px;
 	margin: 0;
 	padding: 2.5%;
-	background-color: blue;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	height: fit-content;
 }
 
 #Projects #tiles .tile:nth-child(odd) {
@@ -37,19 +43,64 @@
 #Projects #tiles .tile-title {
 	margin: 0;
 	padding: 0;
+	font-size: calc(0.8rem + 0.8vmin);
+	line-height: 100%;
+	letter-spacing: calc(0.1rem + 0.15vmin);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #aa0000;
+	margin: calc(0.5rem + 0.5vmin) 0;
 }
 
 #Projects #tiles .tile-text {
 	margin: 0;
 	padding: 0;
+	font-size: calc(0.7rem + 0.7vmin);
+	margin-bottom: calc(0.5rem + 0.5vmin);
 }
 
 #Projects #tiles .tile-stack {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	width: 50%;
 	margin: 0;
 	padding: 0;
+	align-items: center;
+	height: 30px;
+}
+
+#Projects #tiles .tile-stack i {
+	font-size: calc(1rem + 0.5vmin);
+	line-height: 100%;
+}
+
+#Projects #tiles .tile-stack li:not(:last-child) {
+	margin-right: calc(0.25rem + 0.25vmin);
 }
 
 #Projects #tiles .tile-link {
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+	color: #000000;
+	transition: 0.2s all ease-in-out;
+	width: 50%;
+	text-align: center;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#Projects #tiles .tile-link:hover {
+	color: #fefefe;
+	background-color: #aa0000;
+}
+
+#Projects #tiles .tile-link i {
+	margin-right: calc(0.25rem + 0.25vmin);
 }
