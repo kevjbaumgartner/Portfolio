@@ -21,8 +21,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: flex-start;
-	height: fit-content;
+	align-content: flex-start;
+	height: 500px;
 }
 
 #Projects #tiles .tile:nth-child(odd) {
@@ -103,4 +103,11 @@
 
 #Projects #tiles .tile-link i {
 	margin-right: calc(0.25rem + 0.25vmin);
+}
+
+#Projects #tiles .tile-footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
 }
