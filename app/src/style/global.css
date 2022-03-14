@@ -32,6 +32,16 @@ body {
 	opacity: 1 !important;
 }
 
+.focus-link {
+	text-decoration: underline;
+	color: #000000;
+	transition: 0.2s color ease-in-out;
+}
+
+.focus-link:hover {
+	color: #aa0000;
+}
+
 /* App */
 #App {
 	width: 100%;

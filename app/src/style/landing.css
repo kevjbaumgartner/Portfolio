@@ -34,16 +34,6 @@
 	margin: 0;
 }
 
-#Landing #menu .focus-link {
-	text-decoration: underline;
-	color: #000000;
-	transition: 0.2s color ease-in-out;
-}
-
-#Landing #menu .focus-link:hover {
-	color: #aa0000;
-}
-
 #Landing #menu #links-social {
 	text-align: center;
 	padding: 0;
