@@ -56,6 +56,23 @@ export default function Projects() {
 						<a className='tile-link' href='https://github.com/kevjbaumgartner/Shopify-2022-FED-IC' target='_blank' rel='noreferrer'><i className="fa-solid fa-link"></i> Link</a>
 					</div>
 				</div>
+				<div className='tile'>
+					<img className='tile-img' src={require('../assets/tile-udsearch.jpg')} alt=''></img>
+					<span className='tile-title'>Urban Dictionary Search</span>
+					<p className='tile-text'>
+						Minimalized user interface for the Urban Dictionary search engine
+						using their <a className='focus-link' href='https://api.urbandictionary.com/v0/define?term=hello%20world' target='_blank' rel="noreferrer">open API</a>. Created with vanilla technologies and the JavaScript graphing library, Chart.js.
+					</p>
+					<div className='tile-footer'>
+						<ul className='tile-stack'>
+							<li><i className="fa-brands fa-html5"></i></li>
+							<li><i className="fa-brands fa-css3-alt"></i></li>
+							<li><i class="fa-brands fa-js"></i></li>
+							<li><i className="fa-solid fa-cloud"></i></li>
+						</ul>
+						<a className='tile-link' href='https://github.com/kevjbaumgartner/UrbanDictionarySearch' target='_blank' rel='noreferrer'><i className="fa-solid fa-link"></i> Link</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
