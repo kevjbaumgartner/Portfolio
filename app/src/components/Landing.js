@@ -5,7 +5,7 @@ export default function Landing() {
 	return (
 		<div id='Landing' className='AppContent-Center'>
 			<div id='logo'>
-				<img src='https://media-exp1.licdn.com/dms/image/C4D03AQH8VzQ649Vvyg/profile-displayphoto-shrink_800_800/0/1545340413878?e=1651104000&v=beta&t=_8KRLDVm7oqysz90sZoDaK1qC8RJYWanBCnffp-JagE' alt='logo'></img>
+				<img src={require('../assets/profile.jpg')} alt='logo'></img>
 			</div>
 			<div id='menu'>
 				<div className='text'>
