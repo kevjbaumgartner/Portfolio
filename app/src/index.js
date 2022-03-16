@@ -16,7 +16,7 @@ import './style/resume.css';
 import './style/footer.css';
 
 // CSS media queries
-// import './style/media.css';
+import './style/media.css';
 
 // CSS animations import
 import './style/animations.css';

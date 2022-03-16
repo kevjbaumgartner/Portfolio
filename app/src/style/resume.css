@@ -11,7 +11,7 @@
 	padding: calc(0.5rem + 0.5vmin) 0;
 	transition: 0.2s background-color ease-in-out;
 	pointer-events: none;
-	margin-bottom: calc(1rem + 1vmin);
+	margin: calc(1rem + 1vmin) 0;
 	background-color: #f5f5f5;
 }
 
@@ -52,6 +52,10 @@
 	max-width: 1000px;
 	display: flex;
 	flex-direction: column;
+}
+
+#Resume .exp-block:last-child {
+	margin-bottom: calc(1rem + 1vmin);
 }
 
 #Resume .exp-block hr {

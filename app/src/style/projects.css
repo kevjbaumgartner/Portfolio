@@ -1,7 +1,7 @@
 /* Projects */
 #Projects {}
 
-#Projects #projects-callout {
+/* #Projects #projects-callout {
 	width: 70%;
 	max-width: 1000px;
 	line-height: 100%;
@@ -33,7 +33,7 @@
 
 #Projects #projects-callout:hover a, #Projects #projects-callout:hover a i {
 	color: #fefefe;
-}
+} */
 
 #Projects #tiles {
 	width: 70%;
@@ -43,7 +43,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-bottom: calc(0.25rem + 0.25vmin);
+	margin: calc(1rem + 1vmin) 0;
 }
 
 #Projects #tiles .tile {

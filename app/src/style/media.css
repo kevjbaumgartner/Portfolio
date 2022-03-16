@@ -1,121 +1,110 @@
-/* Navbar */
-/* Half-or-less sized screens */
-@media (max-width: 1200px) and (min-height: 575.98px) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
-}
+/* XSmall devices */
+@media (max-width: 575.8px) {
+	/* #App {
+		background-color: red;
+	} */
 
-/* Mobile - Portrait */
-@media (max-width: 575.98px) and (orientation: portrait) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
-}
-
-/* Mobile - Landscape */
-@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
-	#Navbar {
-		top: unset;
-		position: unset;
-		margin: 0;
-		margin-bottom: calc(1rem + 1vmin);
-	}
-}
-
-/* Landing */
-/* Half-or-less sized screens */
-@media (max-width: 1200px) and (min-width: 576px) and (min-height: 576px) {
-	#Landing {
-		height: fit-content;
-		flex-direction: column;
-		flex-wrap: nowrap;
+	.AppContent-Center {
+		align-items: unset;
+		align-content: center;
 	}
 
 	#Landing #logo {
-		height: 40vh;
-		width: 60%;
-		pointer-events: none;
+		margin-bottom: calc(1rem + 1vmin);
 	}
 
 	#Landing #menu {
-		margin-top: calc(1rem + 1vmin);
-		margin-left: 0;
-		width: 80%;
+		margin-left: unset;
+		width: 90%;
 	}
 
-	#Landing #menu #links-social {
-		justify-content: space-evenly;
+	#About #written, #jots {
+		width: 90%;
+		font-size: calc(0.9rem + 0.9vmin);
 	}
 
-	#Landing #menu #links-social a {
-		margin-right: 0 !important;
+	#About #written #intro {
+		font-size: calc(1rem + 1vmin);
+	}
+
+	#About #jots {
+		font-size: calc(0.9rem + 0.9vmin);
+	}
+
+	#About #jots .jot-title {
+		font-size: calc(1rem + 1vmin);
+	}
+
+	#Projects #tiles {
+		width: 90%;
+	}
+
+	#Projects #tiles .tile {
+		margin: 0 0 calc(1rem + 1vmin) 0 !important;
+		width: 100%;
+	}
+
+	#Projects #tiles .tile-title {
+		font-size: calc(1rem + 1vmin);
+	}
+
+	#Projects #tiles .tile-text {
+		font-size: calc(0.9rem + 0.9vmin);
+	}
+
+	#Projects #tiles .tile:last-child {
+		margin: 0 !important;
+	}
+
+	#Projects #tiles .tile-stack i {
+		font-size: calc(1rem + 1vmin);
+	}
+
+	#Projects #tiles .tile-link {
+		font-size: calc(0.9rem + 0.9vmin);
+	}
+
+	#Resume #exp-download, #Resume .exp-block, #Resume .exp-header {
+		width: 90%;
+	}
+
+	#Resume #exp-download, #Resume .exp-header {
+		font-size: calc(0.9rem + 0.9vmin);
+	}
+
+	#Resume .exp-item .exp-item-title, #Resume .exp-item .exp-item-employer, #Resume .exp-item .exp-item-school {
+		font-size: calc(0.9rem + 0.9vmin);
+	}
+
+	#Resume .exp-item .exp-item-list, #Resume .exp-item .exp-item-date {
+		font-size: calc(0.8rem + 0.8vmin);
 	}
 }
 
-/* Mobile - Portrait */
-@media (max-width: 575.98px) and (orientation: portrait) {
-	#Landing {
-		height: fit-content;
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-
-	#Landing #logo {
-		height: auto;
-		width: 60%;
-		pointer-events: none;
-	}
-
-	#Landing #menu {
-		margin-top: calc(1rem + 1vmin);
-		margin-left: 0;
-		width: 80%;
-	}
-
-	#Landing #menu #links-social {
-		justify-content: space-evenly;
-	}
-
-	#Landing #menu #links-social a {
-		margin-right: 0 !important;
+/* Small devices */
+@media (min-width: 576px) {
+	#App {
+		background-color: orange;
 	}
 }
 
-/* Mobile - Landscape */
-@media (max-height: 575.98px) and (max-width: 1198px) and (orientation: landscape) {
-	#Landing {
-		height: fit-content;
-		flex-direction: row;
-		flex-wrap: nowrap;
+/* Medium devices */
+@media (min-width: 768px) {
+	#App {
+		background-color: yellow;
 	}
+}
 
-	#Landing #logo {
-		height: 50vh;
-		width: auto;
-		pointer-events: none;
+/* Large devices */
+@media (min-width: 992px) {
+	#App {
+		background-color: green;
 	}
+}
 
-	#Landing #logo img {
-		width: auto;
-	}
-
-	#Landing #menu .text {
-		font-size: calc(1.2rem + 1.2vmin);
-		max-width: 40vw;
-	}
-
-	#Landing #menu #links-social {
-		justify-content: space-around;
-	}
-
-	#Landing #menu #links-social a {
-		margin-right: 0 !important;
+/* XLarge devices */
+@media (min-width: 1200px) {
+	#App {
+		background-color: blue;
 	}
 }

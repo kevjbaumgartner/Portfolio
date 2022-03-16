@@ -9,7 +9,7 @@
 	justify-content: center;
 	max-height: 400px;
 	max-width: 400px;
-	margin: calc(2rem + 2vmin) 0;
+	margin: calc(1rem + 1vmin) 0;
 }
 
 #About #logo img {
@@ -24,6 +24,7 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
+	margin-bottom: calc(1rem + 1vmin);
 }
 
 #About #written p {

@@ -4,16 +4,16 @@ import React from 'react';
 export default function Projects() {
 	return (
 		<div id='Projects' className='AppContent-Regular'>
-			<div id='projects-callout'>
+			{/* <div id='projects-callout'>
 				<a href='https://github.com/kevjbaumgartner/' target='_blank' rel='noreferrer'><i className="fa-brands fa-github"></i> See all of my repositories here!</a>
-			</div>
+			</div> */}
 			<div id='tiles'>
 				<div className='tile'>
 					<img className='tile-img' src={require('../assets/tile-portfolio.jpg')} alt=''></img>
 					<div className='tile-content'>
 						<span className='tile-title'>Portfolio</span>
 						<p className='tile-text'>
-							This portfolio made with React! It uses framework proprietary extensions
+							My personal portfolio website. Made with React, it uses framework proprietary extensions
 							such as the React router and transition group to streamline interactive development.
 						</p>
 						<div className='tile-footer'>
