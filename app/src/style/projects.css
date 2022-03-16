@@ -57,6 +57,7 @@
 	flex-wrap: nowrap;
 	align-content: flex-start;
 	max-height: 500px;
+	background-color: #fefefe;
 }
 
 #Projects #tiles .tile:nth-child(odd) {

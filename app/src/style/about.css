@@ -67,8 +67,6 @@
 }
 
 #About #jots .jot-title {
-	width: 70%;
-	max-width: 1000px;
 	font-size: calc(0.8rem + 0.8vmin);
 	line-height: 100%;
 	letter-spacing: calc(0.1rem + 0.15vmin);
